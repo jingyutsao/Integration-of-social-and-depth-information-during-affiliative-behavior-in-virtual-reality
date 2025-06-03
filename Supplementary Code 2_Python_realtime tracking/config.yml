@@ -1,0 +1,35 @@
+# Project management
+Date: '2024-12-05'
+Task: 'Na_vFFemale_Female_T4_DP'
+
+# Camera serial number, quote the S/N to ensure it is a string
+CameraSerialNum:
+  top: '20311290'
+  sid: '20406688'
+RegionOfInterest:  # [0]: x, [1]: y, [2]: w, [3]: h
+  top: [380, 10, 480, 1010]
+  sid: [380, 10, 480, 1010]
+ReadROIFromFile: true # True: Use the above ROI setting, False: Select ROI in the program
+ExposureTime:
+  top: 4000
+  sid: 7000
+CentimeterToPixelRatio:
+    top: 0.0198
+    sid: 0.0198
+
+# Acquisition setup
+AcquisitionFrameRate: 20.0
+StreamBufferHandlingMode: OldestFirst
+MaximumFrameNumber: 24000
+
+# Pose estimation parameters
+# Top View: DeepLabCut-live
+DoAnalyzeTopImage: true
+DLCModelDir: 'ResNet50_batch2'
+# Side View: Center of mass
+#DoAnalyzeSidImage: true
+#BackgroundFrameNum: 30
+#BinarizeThreshold: 90
+
+# Video Output
+DoSaveVideo: true

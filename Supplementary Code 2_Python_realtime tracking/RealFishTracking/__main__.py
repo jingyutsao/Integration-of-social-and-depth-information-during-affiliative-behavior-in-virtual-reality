@@ -1,0 +1,3 @@
+import RealFishTracking.RealFishTracking
+
+RealFishTracking.RealFishTracking.main()
